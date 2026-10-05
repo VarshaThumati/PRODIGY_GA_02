@@ -30,22 +30,36 @@ The objective of this project is to explore how pre-trained generative AI models
 - Pillow
 - Google Colab
 
-## How It Works
+---
 
-The project follows the following workflow:
+## 🧠 How It Works
 
-Text Prompt
-↓
-Stable Diffusion Pipeline
-↓
-Text Conditioning
-↓
-Diffusion / Denoising Process
-↓
-Image Generation
-↓
-PNG Output
+The overall generation pipeline can be represented as:
 
+```text
+              User Text Prompt
+                     │
+                     ▼
+             Text Processing
+                     │
+                     ▼
+          Stable Diffusion Model
+                     │
+                     ▼
+             Random Noise
+                     │
+                     ▼
+          Iterative Denoising
+                     │
+                     ▼
+            Latent Representation
+                     │
+                     ▼
+               Image Decoder
+                     │
+                     ▼
+             Generated Image
+```
 ## Features
 
 - Text-to-image generation
